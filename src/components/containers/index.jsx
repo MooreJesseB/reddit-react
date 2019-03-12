@@ -92,14 +92,17 @@ class Index extends Component {
     }
     
     return (
-      <div className="container">
-        <div className="search">
-          <SearchPres 
-            subreddits={this.state.subreddits} 
-            onClick={this.handleSubredditClick}
-          />
+      <div>
+        <h1 className="main-title">The wee little subreddit browser</h1>
+        <div className="container">
+          <div className="search">
+            <SearchPres 
+              subreddits={this.state.subreddits} 
+              onClick={this.handleSubredditClick}
+            />
+          </div>
+          {postsContainer}
         </div>
-        {postsContainer}
       </div>
     );
   }

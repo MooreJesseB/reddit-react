@@ -57,7 +57,7 @@ class Search extends Component {
     return (
       <div>
         <h3 className="search-title">Please select a subreddit from below:</h3>
-        <h4>filter with search</h4>
+        <p class="search-sub-title">filter with search</p>
         <input
           className="search-field"
           onChange={this.filterListHandler}

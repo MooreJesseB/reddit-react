@@ -50,12 +50,23 @@ input:focus {
   /* border-color: #727272; */
 }
 
+h1 {
+  text-align: center;
+}
+
 h3 {
   color: #444444;
 }
 
-h4 {
+.search-sub-title {
   color: gray;
+  font-style: italic;
+}
+
+.main-title {
+  color: #444444;
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
 .container {
@@ -66,7 +77,9 @@ h4 {
 
 .search {
   max-width: 250px;
+  height: 0%;
   margin-right: 25px;
+  margin-bottom: 25px;
   border: 1px solid lightgrey;
   padding: 10px 10px 10px 10px;
   border-radius: 3px;
