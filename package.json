@@ -1,11 +1,18 @@
 {
   "name": "reddit-react",
   "version": "1.0.0",
-  "description": "lightweight sub-reddit browser",
+  "description": "lightweight subreddit browser",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "mocha --require @babel/register --recursive ./test"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "author": "Jesse Moore",
   "license": "ISC",
@@ -13,14 +20,25 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "css-loader": "^2.1.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^14.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "mocha": "^6.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "react-moment": "^0.8.4"
   }
 }

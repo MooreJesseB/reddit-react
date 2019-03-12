@@ -1,0 +1,141 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+img {
+  max-height: 512px;
+  max-width: 512px;
+}
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.title a {
+  color: rgb(26, 26, 27)
+}
+
+.comments a {
+  color: grey;
+}
+
+a:hover {
+  text-decoration: none;
+  color: slategray;
+}
+
+a:active {
+  color: rgb(26, 26, 27)
+}
+
+a:visited {
+  color: gray;
+}
+
+a:visited.comments {
+  color: grey;
+}
+
+input.search-field {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  /* border-color: #727272; */
+}
+
+h3 {
+  color: #444444;
+}
+
+h4 {
+  color: gray;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.search {
+  max-width: 250px;
+  margin-right: 25px;
+  border: 1px solid lightgrey;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+}
+
+.search-field {
+  width: 85%;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.list-title:hover {
+  cursor: pointer;
+}
+
+.list-title {
+  color: gray;
+}
+
+.list-title:hover {
+  color: black;
+}
+
+.post-list {
+  flex: 1;
+  max-width: 700px;
+  padding: 0 10px 10px 10px;
+}
+
+.post {
+  border: 1px solid lightgrey;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.post:hover {
+  border-color: grey;
+}
+
+.header {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.subreddit {
+  font-weight: 700;
+}
+
+.author {
+  color: grey;
+  font-weight: lighter;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.image {
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.comments {
+  color: grey;
+  font-weight: 700;
+  font-size: 12px;
+}
