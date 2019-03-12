@@ -3,7 +3,7 @@
 ## Installation and usage
 To get this application running do the following steps:
 - Clone the repository to your local environment
-- `cd reddr-react`
+- `cd reddit-react`
 - `npm install`
 - `npm start`
 
