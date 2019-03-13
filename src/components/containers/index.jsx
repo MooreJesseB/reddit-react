@@ -57,6 +57,10 @@ class Index extends Component {
       const { data } = item;
       let image = null;
       if (data.preview) {
+        /*
+          The querystring in image urls from reddit appear to be encoded 
+          and must be updated to function properly
+        */
         image = data.preview.images[0].source.url.replace(new RegExp(/(&amp;)/gi), '&')
       }
       return {
