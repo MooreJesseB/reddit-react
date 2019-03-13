@@ -21,7 +21,7 @@ class Search extends Component {
     const { list, value } = data;
     
     return list.filter(item => {
-      if (item.includes(value)) {
+      if (item.toLowerCase().includes(value.toLowerCase())) {
         return item;
       }
     })
